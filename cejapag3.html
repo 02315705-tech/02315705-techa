@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CEJAPAG3</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <style>
+
+        body{
+            background: linear-gradient(135deg,#f1666d,#ffb199);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* PORTADA */
+        .portada{
+            width:100%;
+            height:500px;
+            object-fit:cover;
+        }
+
+        /* TITULO */
+        .titulo{
+            text-align:center;
+            color:white;
+            font-weight:bold;
+            margin:40px 0;
+            text-shadow:2px 2px 5px black;
+        }
+
+        /* CARDS */
+        .game-card{
+            border:none;
+            border-radius:20px;
+            overflow:hidden;
+            margin-bottom:30px;
+            transition:0.4s;
+            box-shadow:0px 5px 15px rgba(0,0,0,0.4);
+        }
+
+        .game-card:hover{
+            transform:translateY(-10px);
+            box-shadow:0px 10px 25px rgba(0,0,0,0.6);
+        }
+
+        .game-card img{
+            height:250px;
+            object-fit:cover;
+        }
+
+        .card-body{
+            background:white;
+        }
+
+        .precio{
+            color:#dc3545;
+            font-size:24px;
+            font-weight:bold;
+        }
+
+        /* FOOTER */
+        .footer-links{
+            background:#343a40;
+            padding:20px;
+            border-radius:15px;
+        }
+
+        .footer-links a{
+            color:white;
+            margin:10px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .footer-links a:hover{
+            color:#ff7676;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+    <a class="navbar-brand" href="index.html">INICIO</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerDemo02">
+
+        <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item active">
+                <a class="nav-link" href="cejapag1.html">MULTIJUGADOR</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="cejapag2.html">PROMOCIONES</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="cejapag3.html">POPULARES</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="cejapag4.html">MAS ENTRETENIDOS</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="Pedidos.html">PEDIDOS</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="practica 4 - biografia.html">INFOGRAFIA</a>
+            </li>
+
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar">
+
+            <button class="btn btn-outline-light" type="submit">
+                BUSCAR
+            </button>
+
+        </form>
+
+    </div>
+
+</nav>
+
+<!-- PORTADA -->
+<img src="Imagenes/portadatres.jpg" class="portada">
+
+<!-- TITULO -->
+<h1 class="titulo">JUEGOS POPULARES</h1>
+
+<!-- CONTENIDO -->
+<div class="container">
+
+    <div class="row">
+
+        <!-- GTA -->
+        <div class="col-md-4">
+
+            <div class="card game-card">
+
+                <img src="imagenes/gta.jpg" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h4>GTA V</h4>
+
+                    <p class="precio">$400 - $900</p>
+
+                    <ul>
+                        <li>Mundo abierto enorme</li>
+                        <li>Robos y actividades libres</li>
+                        <li>Personalización de personaje</li>
+                        <li>Mucho contenido online</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BLACK OPS -->
+        <div class="col-md-4">
+
+            <div class="card game-card">
+
+                <img src="imagenes/black6.jpg" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h4>Black Ops 6</h4>
+
+                    <p class="precio">$1,200 - $1,600</p>
+
+                    <ul>
+                        <li>Shooter competitivo</li>
+                        <li>Modo zombis</li>
+                        <li>Partidas rápidas</li>
+                        <li>Multijugador online</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- MINECRAFT -->
+        <div class="col-md-4">
+
+            <div class="card game-card">
+
+                <img src="imagenes/minecraft.jpg" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h4>Minecraft</h4>
+
+                    <p class="precio">$499</p>
+
+                    <ul>
+                        <li>Mundo abierto infinito</li>
+                        <li>Mods ilimitados</li>
+                        <li>Supervivencia</li>
+                        <li>Construcción libre</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- SILKSONG -->
+        <div class="col-md-4">
+
+            <div class="card game-card">
+
+                <img src="imagenes/silksong.jpg" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h4>Silksong</h4>
+
+                    <p class="precio">$400 - $500</p>
+
+                    <ul>
+                        <li>Metroidvania 2D</li>
+                        <li>Exploración libre</li>
+                        <li>Alta dificultad</li>
+                        <li>Combate rápido</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ALIEN -->
+        <div class="col-md-4">
+
+            <div class="card game-card">
+
+                <img src="imagenes/alien.jpg" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h4>Alien Hominid</h4>
+
+                    <p class="precio">$200 - $400</p>
+
+                    <ul>
+                        <li>Run & Gun 2D</li>
+                        <li>Humor absurdo</li>
+                        <li>Cooperativo local</li>
+                        <li>Estilo caricatura</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RED DEAD -->
+        <div class="col-md-4">
+
+            <div class="card game-card">
+
+                <img src="imagenes/reddead.jpg" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h4>Red Dead Redemption 2</h4>
+
+                    <p class="precio">$600 - $1000</p>
+
+                    <ul>
+                        <li>Mundo abierto western</li>
+                        <li>Historia emocional</li>
+                        <li>Misiones secundarias</li>
+                        <li>Gran exploración</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- LUIGI -->
+        <div class="col-md-4">
+
+            <div class="card game-card">
+
+                <img src="imagenes/luigi.jpg" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h4>Luigi's Mansion</h4>
+
+                    <p class="precio">$790 - $1500</p>
+
+                    <ul>
+                        <li>Cooperativo online</li>
+                        <li>Puzzles divertidos</li>
+                        <li>Ideal para familia</li>
+                        <li>Exploración entretenida</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- SPIDERMAN -->
+        <div class="col-md-4">
+
+            <div class="card game-card">
+
+                <img src="imagenes/spiderman.jpg" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h4>Spider-Man</h4>
+
+                    <p class="precio">$300 - $800</p>
+
+                    <ul>
+                        <li>Mundo abierto</li>
+                        <li>Balanceo con telarañas</li>
+                        <li>Combate fluido</li>
+                        <li>Gráficos detallados</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BOMBERMAN -->
+        <div class="col-md-4">
+
+            <div class="card game-card">
+
+                <img src="imagenes/bomberman.jpg" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h4>Bomberman</h4>
+
+                    <p class="precio">$200 - $800</p>
+
+                    <ul>
+                        <li>Juego arcade clásico</li>
+                        <li>Multijugador divertido</li>
+                        <li>Bombas estratégicas</li>
+                        <li>Fácil de aprender</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ARK -->
+        <div class="col-md-4">
+
+            <div class="card game-card">
+
+                <img src="imagenes/ark.jpg" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h4>ARK</h4>
+
+                    <p class="precio">$300 - $900</p>
+
+                    <ul>
+                        <li>Supervivencia online</li>
+                        <li>Dinosaurios domesticables</li>
+                        <li>Mundo abierto</li>
+                        <li>Construcción de bases</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- HALO -->
+        <div class="col-md-4">
+
+            <div class="card game-card">
+
+                <img src="imagenes/halo.jpg" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h4>Halo</h4>
+
+                    <p class="precio">$200 - $400</p>
+
+                    <ul>
+                        <li>Multijugador competitivo</li>
+                        <li>Shooter sci-fi</li>
+                        <li>Personalización</li>
+                        <li>Parte importante de la saga</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RESIDENT EVIL -->
+        <div class="col-md-4">
+
+            <div class="card game-card">
+
+                <img src="imagenes/residentevil4.jpg" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h4>Resident Evil 4</h4>
+
+                    <p class="precio">$500</p>
+
+                    <ul>
+                        <li>Combate rápido</li>
+                        <li>Ambientación de terror</li>
+                        <li>Inventario estratégico</li>
+                        <li>Mejora de armas</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="container mt-5 mb-5">
+
+    <div class="footer-links text-center">
+
+        <a href="index.html">INICIO</a>
+        <a href="cejapag1.html">MULTIJUGADOR</a>
+        <a href="cejapag2.html">PROMOCIONES</a>
+        <a href="cejapag3.html">POPULARES</a>
+        <a href="cejapag4.html">MAS ENTRETENIDOS</a>
+
+    </div>
+
+</div>
+
+<!-- SCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

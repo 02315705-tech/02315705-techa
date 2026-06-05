@@ -1,0 +1,272 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::practica 4 - Biografia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="index.html">INICIO</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="cejapag1.html">MULTIJUGADOR<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="cejapag2.html">PROMOCIONES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="cejapag3.html" tabindex="-1" aria-disabled="true">POPULARES</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="cejapag4.html" tabindex="-1" aria-disabled="true">MAS ENTRETENIDOS</a>
+                    </li>
+                            <li class="nav-item">
+              <a class="nav-link" href="Pedidos.html" tabindex="-1" aria-disabled="true">PEDIDOS</a>
+      </li>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="practica 4 - biografia.html" tabindex="-1" aria-disabled="true">INFOGRAFIA</a>
+</li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">BUSCAR</button>
+                  </form>
+                </div>
+              </nav>  
+    <div class="contenedor">
+        <header>
+
+        </header>
+
+        <main>
+             <div class="foto">
+                <img src="CSS/IMG/mi foto.JPEG" alt="">
+            </div>
+            <div class="texto">
+                <h2>Rodrigo Ceja</h2>
+                <p>Lorem, impsum dolor, sit amet
+                    consectetur adipisicing elit.
+                    Praesentium mollitia iusto accusamus
+                    repellat error obcaecati numquam fugiat
+                    vitae! Adipisci repeallat iure
+                    repellendus eum? Docimus quas omnis
+                    tempora quisquam corrupti necessitatibus</p>
+                    <p>Lorem, impsum dolor, sit amet
+                        consectetur adipisicing elit.
+                        Praesentium mollitia iusto accusamus
+                        repellat error obcaecati numquam fugiat
+                        vitae! Adipisci repeallat iure
+                        repellendus eum? Docimus quas omnis
+                        tempora quisquam corrupti necessitatibus</p>
+                </div>
+                <html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    padding:20px;
+}
+
+/* 5 CUADROS POR FILA */
+.catalogo{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:20px;
+}
+
+/* TARJETAS */
+.card{
+    background:white;
+    border:1px solid #ddd;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.02);
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.info{
+    padding:12px;
+}
+
+.titulo{
+    font-size:14px;
+    color:#555;
+    margin-bottom:8px;
+}
+
+.precio{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.colores{
+    display:flex;
+    gap:8px;
+}
+
+.color{
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    border:1px solid #aaa;
+}
+
+.negro{background:black;}
+.gris{background:gray;}
+.blanco{background:white;}
+.beige{background:beige;}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+    .catalogo{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:700px){
+    .catalogo{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:500px){
+    .catalogo{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="catalogo">
+
+    <!-- FILA 1 -->
+
+    <div class="card">
+        <img src="imagenes2/mine.jpg" alt="">
+        <div class="info">
+            <div class="titulo">minecraft</div>
+            <div class="precio">$799</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagenes2/bloons.jpg" alt="">
+        <div class="info">
+            <div class="titulo">Bloons TD 6</div>
+            <div class="precio">$149</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagenes2/broforce.jpg" alt="">
+        <div class="info">
+            <div class="titulo">broforce</div>
+            <div class="precio">$269</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagenes2/out.jpg" alt="">
+        <div class="info">
+            <div class="titulo">out</div>
+            <div class="precio">$600</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagenes2/terraria.jpg" alt="">
+        <div class="info">
+            <div class="titulo">terraria</div>
+            <div class="precio">$249</div>
+        </div>
+    </div>
+
+    <!-- FILA 2 -->
+
+    <div class="card">
+        <img src="imagenes2/it.jpg" alt="">
+        <div class="info">
+            <div class="titulo">it takes two</div>
+            <div class="precio">$650</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagenes2/gta6.jpg" alt="">
+        <div class="info">
+            <div class="titulo">GTA 6</div>
+            <div class="precio">$1,400</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagenes2/forza.jpg" alt="">
+        <div class="info">
+            <div class="titulo">Forza</div>
+            <div class="precio">$1,700</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagenes2/sub.jpg" alt="">
+        <div class="info">
+            <div class="titulo">Subnautica 2</div>
+            <div class="precio">$539</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagenes2/sons.jpg" alt="">
+        <div class="info">
+            <div class="titulo">the sons of the forest</div>
+            <div class="precio">$600</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+            </main>
+
+            <footer>
+                <h3>practica hecha por: Rodrigo Ceja- 02315705</h3>
+            </footer>
+        </div>
+</body>
+</html>

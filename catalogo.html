@@ -1,0 +1,194 @@
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    padding:20px;
+}
+
+/* 5 CUADROS POR FILA */
+.catalogo{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:20px;
+}
+
+/* TARJETAS */
+.card{
+    background:white;
+    border:1px solid #ddd;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.02);
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.info{
+    padding:12px;
+}
+
+.titulo{
+    font-size:14px;
+    color:#555;
+    margin-bottom:8px;
+}
+
+.precio{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.colores{
+    display:flex;
+    gap:8px;
+}
+
+.color{
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    border:1px solid #aaa;
+}
+
+.negro{background:black;}
+.gris{background:gray;}
+.blanco{background:white;}
+.beige{background:beige;}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+    .catalogo{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:700px){
+    .catalogo{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:500px){
+    .catalogo{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="catalogo">
+
+    <!-- FILA 1 -->
+
+    <div class="card">
+        <img src="img1.jpg" alt="">
+        <div class="info">
+            <div class="titulo">Chamarra 1</div>
+            <div class="precio">$763</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img2.jpg" alt="">
+        <div class="info">
+            <div class="titulo">Chamarra 2</div>
+            <div class="precio">$1,095</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img3.jpg" alt="">
+        <div class="info">
+            <div class="titulo">Chamarra 3</div>
+            <div class="precio">$1,242</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img4.jpg" alt="">
+        <div class="info">
+            <div class="titulo">Chamarra 4</div>
+            <div class="precio">$1,506</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img5.jpg" alt="">
+        <div class="info">
+            <div class="titulo">Chamarra 5</div>
+            <div class="precio">$932</div>
+        </div>
+    </div>
+
+    <!-- FILA 2 -->
+
+    <div class="card">
+        <img src="img6.jpg" alt="">
+        <div class="info">
+            <div class="titulo">Chamarra 6</div>
+            <div class="precio">$583</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img7.jpg" alt="">
+        <div class="info">
+            <div class="titulo">Chamarra 7</div>
+            <div class="precio">$904</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img8.jpg" alt="">
+        <div class="info">
+            <div class="titulo">Chamarra 8</div>
+            <div class="precio">$1,315</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img9.jpg" alt="">
+        <div class="info">
+            <div class="titulo">Chamarra 9</div>
+            <div class="precio">$720</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img10.jpg" alt="">
+        <div class="info">
+            <div class="titulo">Chamarra 10</div>
+            <div class="precio">$850</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
